@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Sample HTML App</title>
+        <link rel="stylesheet"  href="css/styles.css" type="text/css">
+    </head>
+
+    <body>
+        <div class="mainarea">
+            <div class="section1">
+                <h1>Roll a Dice v1.0.0</h1>
+            </div>
+
+            <div class="section2">
+                <p>Goal is to get a 6 in minimum rolls!</p>
+                <input type="text" id="onDice" value=""><br>
+                <button id="roll-button" onclick="response()">Roll</button><br>
+            </div>
+            
+            <div class="section3">
+                credits @ Mayank Rathore | 2020
+                rathore.mayanksgh@gmail.com 
+            </div>
+        </div>
+
+        <div class="successmsg" id="successmsg">
+            <input type="text" id="winmsg" value="">
+        </div>
+    </body>
+
+    <script>
+        let t = 0;
+        
+        function response(){
+            t++;
+            let lower = 1; 
+            let upper = 6; 
+            
+            let myRandom = Math.floor(Math.random() * (upper - lower + 1)) + lower;            
+            
+            document.getElementById("onDice").value = myRandom;
+            
+            if(myRandom === 6){
+                document.getElementById("successmsg").style.visibility = "visible";
+                document.getElementById("winmsg").value = "You scored a 6 in "+ t +" attempts!!! Reload page to play again."
+                document.getElementById("roll-button").style.visibility = "hidden";        
+            }
+        }
+    </script>
+
+</html>

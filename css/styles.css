@@ -1,0 +1,55 @@
+body{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.mainarea{
+    margin: 8% 37% ;
+    background-color: #c3c3c3;
+    padding: 4%;
+}
+.section1{
+    text-align: left;
+    padding: 1%;
+}
+
+.section2 > p{
+    padding: 1%;
+    font-size: small;
+    font-style: italic;
+}
+
+.section2 > input{
+    margin: 1%;
+    width: 50%;
+    border: none;
+    font-size: x-large;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.section2 > button{
+    margin: 1%;
+    width: 50%;
+    text-align: center;
+    border-radius: 2px;
+    font-size: small;
+}
+
+.section2 > button ::hover{
+    background-color: lime;
+}
+
+.section3{
+    margin: 10% 0 5% 0;
+    text-align: center;
+    font-size: x-small;
+}
+
+.successmsg > input{
+    text-align: center;
+    width: 90%;
+    border: none;
+    font-size: x-large;
+    font-style: italic;
+    color:lime;
+}
